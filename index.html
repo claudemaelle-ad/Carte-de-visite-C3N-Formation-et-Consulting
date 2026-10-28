@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no, date=no, email=no, address=no">
 <title>Carole Fa Houi — C3N Formation et Consulting</title>
 <meta name="description" content="Carole Fa Houi, formatrice indépendante — Secrétariat médical et TP SAMA, techniques de secrétariat, bureautique.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -204,6 +205,15 @@
     color:var(--green);
   }
 
+  /* Empêche iOS/Android de transformer le NDA en lien bleu */
+  a[x-apple-data-detectors], .contact-row a{
+    color:inherit !important;
+    text-decoration:none !important;
+    font-weight:inherit !important;
+    font-size:inherit !important;
+    font-family:inherit !important;
+  }
+
   .note{
     display:block;
     text-align:left;
@@ -283,7 +293,7 @@
 
         <div class="contact-row" style="cursor:default;">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg>
-          <span>NDA : 73310361931</span>
+          <span translate="no">NDA : 73310361931</span>
         </div>
 
         <div class="contact-row" style="cursor:default;">
